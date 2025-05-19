@@ -12,20 +12,6 @@ This project implements a custom heap memory allocator in C++ that uses a Markov
 - **Free Block Coalescing**: Merges adjacent free blocks to reduce fragmentation.
 - **Markov Predictor**: Learns patterns in allocation sizes to predict and cache likely future sizes.
 - **Heap Visualization**: Prints a detailed view of heap state, showing size and allocation status of each block.
-
----
-
-## File Structure
-
-├── allocator.cpp # Core allocation and deallocation logic
-├── heap.cpp # Heap initialization and memory operations
-├── heap.h # Declarations for heap functions
-├── MarkovPredictor.cpp # Markov predictor implementation
-├── MarkovPredictor.h # Predictor class declaration
-├── main.cpp # Sample usage and testing
-└── README.md # Project documentation
-
-
 ---
 
 ## How It Works
@@ -77,8 +63,8 @@ This mechanism improves performance by reusing blocks before they are fragmented
 2. Compile with g++ (C++20 is required for `std::bit_ceil`):
    ```sh
    g++ -std=c++20 main.cpp allocator.cpp heap.cpp MarkovPredictor.cpp -o allocator
-```
-3.Run the executable:
+   ```
+3. Run the executable:
 ```sh
 ./allocator
 ```
