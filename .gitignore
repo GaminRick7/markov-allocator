@@ -1,0 +1,92 @@
+# Build artifacts
+allocator
+test_allocator
+enhanced_test
+simple_test
+*.o
+*.obj
+*.exe
+*.out
+*.app
+
+# C++ specific
+*.cpp~
+*.h~
+*.cpp.bak
+*.h.bak
+*.cpp.save
+*.h.save
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# CMake (if used later)
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+build/
+out/
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Profiling and analysis
+*.gcov
+*.gcda
+*.gcno
+*.prof
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Package manager files (if using vcpkg, conan, etc.)
+vcpkg_installed/
+conan/
+conanbuildinfo.txt
+conaninfo.txt
+
+# Documentation build
+docs/
+docs/_build/
+site/
+
+# Test coverage
+coverage/
+*.gcov
+*.gcda
+*.gcno
+
+# Memory checkers
+valgrind-out.txt
+*.vgcore
+
+# Profiling output
+gprof.out
+perf.data
+perf.data.old
